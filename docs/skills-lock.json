@@ -1,0 +1,40 @@
+{
+  "installedOn": "2026-09-21",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "repo": "anthropics/skills",
+      "path": "skills/frontend-design",
+      "refAtInstall": "main",
+      "skillFileSha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+    },
+    {
+      "name": "high-end-visual-design",
+      "repo": "Leonxlnx/taste-skill",
+      "path": "skills/soft-skill",
+      "refAtInstall": "main",
+      "skillFileSha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc"
+    },
+    {
+      "name": "design-taste-frontend",
+      "repo": "Leonxlnx/taste-skill",
+      "path": "skills/taste-skill",
+      "refAtInstall": "main",
+      "skillFileSha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+    },
+    {
+      "name": "awwwards-animations",
+      "repo": "devmartinese/awwwards-animations-skill",
+      "path": ".",
+      "refAtInstall": "main",
+      "skillFileSha256": "11e716b5213179f9631f0a754c1c52c290730ff54f73fbcd0d01826f78c4b86e"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "path": ".claude/skills/ui-ux-pro-max",
+      "refAtInstall": "main",
+      "skillFileSha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+    }
+  ]
+}
