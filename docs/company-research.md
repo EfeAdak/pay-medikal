@@ -9,10 +9,10 @@ Araştırma tarihi: 21 Eylül 2026. Kapsam: Kartal/İstanbul'daki Pay Medikal ş
 | Ticari unvan | Pay Medikal Tıbbi Ürünler İletişim Bilgisayar Reklam Hizmetleri San. ve Tic. Ltd. Şti. | İhracatçı birliği listesindeki kayıtla destekleniyor; güncel ticaret sicili doğrulaması yapılmadı. |
 | Faaliyet | Medikal ürün ticareti; rehber kaydında cerrahi, tıbbi ve ortopedik alet ve cihazların toptan ticareti | İkincil kaynak. Spesifik ürünler, temsilcilikler ve sertifikalar doğrulanmadı. |
 | Kuruluş | 27.12.2005 | Firma rehberinin iddiası. Sayfada kullanılmadı. |
-| Kartal adresi | Soğanlık Yeni Mah., Ihlara Sok. No:23/A, 34880 Kartal/İstanbul | İşletme rehberinde mevcut; ihracatçı birliği belgesi aynı sokakta No:23 veriyor. Kullanıcı teyidi bekleniyor. |
-| Telefon | 0216 541 43 05 | İki işletme rehberinde ortak. Kartal kaydına göre önizlemede kullanıldı; kullanıcı teyidi bekleniyor. |
+| Kartal adresi | Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal / İstanbul, Türkiye | Proje sahibi tarafından 21 Eylül 2026 tarihinde doğrudan teyit edildi. |
+| Telefon | +90 216 541 45 05 | Proje sahibi tarafından 21 Eylül 2026 tarihinde doğrudan teyit edildi. |
 | Alternatif numara | 0216 571 43 07 | Birlik belgelerinde telefon/faks sütunlarında farklı sunuluyor. Ana telefon olarak kullanılmadı. |
-| E-posta | Güvenilir biçimde bulunamadı | Uydurulmadı. `company.email = null`; kullanıcıdan istendi. |
+| E-posta | pay@paymedikal.com | Proje sahibi tarafından 21 Eylül 2026 tarihinde doğrudan teyit edildi. |
 | Logo / marka renkleri | Resmî kaynak bulunamadı | Sayfadaki yazı düzeni ve renkler tasarım önerisidir, mevcut resmî logo olarak sunulmaz. |
 | Resmî web sitesi | Doğrulanamadı | `paymedikal.com` erişim denemesi sonuç vermedi; alan adı sahipliği çıkarımı yapılmadı. |
 
@@ -24,6 +24,10 @@ Araştırma tarihi: 21 Eylül 2026. Kapsam: Kartal/İstanbul'daki Pay Medikal ş
 
 Volza sonuçları şirketi Almanya'da gösteren tutarsız otomatik kayıtlar içeriyordu; şirket profili için güvenilir kabul edilmedi. Başka medikal firmalarının bilgileri birleştirilmedi.
 
-## Yayına geçişte tamamlanacak bilgi
+## Yayına geçiş durumu
 
-Firmanın güncel e-posta adresi ve telefon/adres teyidi. E-posta gelmeden sayfa görsel ve teknik olarak incelenebilir; tüm iletişim bilgileri tamamlanmış olarak sunulamaz. Kaynak kod tek noktadan güncellenir: `src/content/company.ts`.
+E-posta, telefon ve adres proje sahibi tarafından teyit edildi. Kaynak kod tek noktadan güncellenir: `src/content/company.ts`. Resmî logo henüz gelmedi; mevcut yazı düzenleri geçici tasarım önerisidir.
+
+## Kullanıcı teyidi (21 Eylül 2026)
+
+Proje sahibi sohbet üzerinden güncel bilgileri doğrudan verdi: e-posta `pay@paymedikal.com`, telefon `+90 216 541 45 05` (dizin kaydındaki `0216 541 43 05` yerine geçer; son iki hane farklı), adres `Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal / İstanbul, Türkiye`. `src/content/company.ts` içinde telefon ve adres `confirmedByOwner: true` olarak işaretlendi.

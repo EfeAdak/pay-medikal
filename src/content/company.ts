@@ -1,6 +1,5 @@
-/** Research provenance and unresolved details: docs/company-research.md.
- * Directory-sourced contact details need owner confirmation before publication.
- * Do not replace null with a guessed email address.
+/** Contact details confirmed directly by the owner on 21 Eylül 2026: docs/company-research.md.
+ * Do not replace with guessed or directory-sourced values without re-confirming provenance.
  */
 export const company: {
   name: string
@@ -10,16 +9,16 @@ export const company: {
 } = {
   name: 'Pay Medikal',
   phone: {
-    display: '0216 541 43 05',
-    href: 'tel:+902165414305',
-    confirmedByOwner: false,
+    display: '+90 216 541 45 05',
+    href: 'tel:+902165414505',
+    confirmedByOwner: true,
   },
-  email: null,
+  email: 'pay@paymedikal.com',
   address: {
-    street: 'Soğanlık Yeni Mah. Ihlara Sok. No:23/A',
-    locality: '34880 Kartal / İstanbul',
-    mapQuery: 'Pay Medikal Soğanlık Yeni Ihlara Sokak 23/A Kartal İstanbul',
-    confirmedByOwner: false,
+    street: 'Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A',
+    locality: '34880 Kartal / İstanbul, Türkiye',
+    mapQuery: 'Pay Medikal, Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal, İstanbul, Türkiye',
+    confirmedByOwner: true,
   },
 }
 
