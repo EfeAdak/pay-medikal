@@ -37,6 +37,10 @@ Bu klasör başka bir projenin Git deposu içinde bulunuyor. Üst klasörün fro
 
 21 Eylül 2026: Kullanıcı üçüncü konsepti (mühür) istemedi; ilgili branch ve dosyalar silindi, yalnızca yeşil ve kahve kaldı. Kullanıcı bu ikisini bir başkasına göstermek için tek link istedi. Bu proje reposuna (pay-medikal) hiçbir push/commit yapılmadan, ayrı bir repo olan `EfeAdak/EfeAdak.github.io` oluşturulup `npm run build` çıktısı oraya push edildi ve GitHub Pages açıldı: https://efeadak.github.io/ (yeşil) ve https://efeadak.github.io/kahve/ (kahve). Bu statik bir anlık görüntüdür; pay-medikal reposundaki sonraki değişiklikler otomatik yansımaz, güncellemek için build tekrar oraya push edilmeli.
 
+## Karar (21 Eylül 2026)
+
+Kullanıcı iki konsepti (yeşil, kahve) efeadak.github.io önizlemesinden inceledi ve **yeşil konsepti** seçti. Kahve konsepti (`/kahve/`, `src/concepts/BrownApp.tsx`, `src/brown.css`, `tests/brown.spec.ts`, `design-system/pay-medikal/pages/kahve-editorial.md`) şimdilik referans olarak repoda kalıyor, kod tarafında bir değişiklik yapılmadı. Bir sonraki adım kullanıcı tarafından netleştirilecek: kahve'yi tamamen kaldırmak mı, yoksa gerçek alan adına (paymedikal.com) yayın hazırlığına mı geçilecek.
+
 ## Doğrulama sonucu
 
 21 Eylül 2026: `npm run build` başarılı. Kahve konsepti eklendikten sonra `npm run test:browser -- --workers=2`: 16/16 başarılı (Chromium masaüstü ve mobil emülasyonu). Otomatik axe taramasında test edilen WCAG A/AA kuralları için ihlal bulunmadı. 320, 375, 768, 844, 1024 ve 1920px genişlikler; yatay taşma, klavye odağı, iletişim URL'leri, görsel yükleme, büyütülmüş metin, reduced-motion ve JavaScript kapalı kullanım kontrol edildi. Bu sonuç tüm tarayıcılarda manuel erişilebilirlik sertifikası değildir.
