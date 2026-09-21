@@ -235,7 +235,7 @@
   .brown-description { max-width: 370px; margin: 25px 0 25px; font-size: 15px; line-height: 1.8; }
   .brown-artwork { min-height: 0; aspect-ratio: 4 / 4.65; border-radius: 46% 46% 5px 5px / 22% 22% 5px 5px; }
   .brown-artwork img { object-position: center; }
-  .brown-contact { margin: -1px 0 0; padding: 26px 22px; text-align: center; }
+  .brown-contact { align-self: stretch; margin: -1px 0 0; padding: 26px 22px; text-align: center; }
   .brown-contact-intro { display: block; }
   .brown-contact-intro p { margin-top: 7px; }
   .brown-contact-list { grid-template-columns: 1fr; padding-top: 6px; }
