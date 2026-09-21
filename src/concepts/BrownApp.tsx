@@ -19,7 +19,7 @@ export function BrownApp() {
         <section className="brown-hero" aria-labelledby="brown-title">
           <div className="brown-copy">
             <p className="brown-eyebrow" data-entrance>Web sitemiz yenileniyor</p>
-            <h1 className="brown-title" id="brown-title" data-entrance>Kısa bir ara.</h1>
+            <h1 className="brown-title" id="brown-title" data-entrance>Aynı güven, yenileniyoruz.</h1>
             <p className="brown-description" data-entrance>
               Size daha iyi bir hizmet verebilmek için sitemiz geçici bir süreliğine bakımdadır.
             </p>

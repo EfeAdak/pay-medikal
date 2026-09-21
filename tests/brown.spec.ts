@@ -8,7 +8,7 @@ test('brown concept presents the maintenance message and verified contact destin
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()) })
 
   await page.goto('/kahve/')
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Kısa bir ara.')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Aynı güven, yenileniyoruz.')
   await expect(page.getByText('Size daha iyi bir hizmet verebilmek')).toBeVisible()
   await expect(page.locator('a[href^="tel:"]')).toHaveAttribute('href', company.phone.href)
   await expect(page.locator('a[href^="mailto:"]')).toHaveCount(company.email ? 1 : 0)
