@@ -31,3 +31,7 @@ E-posta, telefon ve adres proje sahibi tarafından teyit edildi. Kaynak kod tek 
 ## Kullanıcı teyidi (21 Eylül 2026)
 
 Proje sahibi sohbet üzerinden güncel bilgileri doğrudan verdi: e-posta `pay@paymedikal.com`, telefon `+90 216 541 45 05` (dizin kaydındaki `0216 541 43 05` yerine geçer; son iki hane farklı), adres `Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal / İstanbul, Türkiye`. `src/content/company.ts` içinde telefon ve adres `confirmedByOwner: true` olarak işaretlendi.
+
+### Düzeltme (21 Eylül 2026, sonraki tur)
+
+Proje sahibi telefon numarasının `45 05` değil `43 05` (yani dizin kaydıyla aynı: `+90 216 541 43 05`) olduğunu belirtti; `45 05` hatalıymış. Ayrıca adreste "Mahallesi" değil "Mahalle" kullanılması istendi: `Soğanlık Yeni Mahalle, Ihlara Sokak, No: 23/A`. `src/content/company.ts` buna göre güncellendi.

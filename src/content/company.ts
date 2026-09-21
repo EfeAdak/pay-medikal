@@ -9,15 +9,15 @@ export const company: {
 } = {
   name: 'Pay Medikal',
   phone: {
-    display: '+90 216 541 45 05',
-    href: 'tel:+902165414505',
+    display: '+90 216 541 43 05',
+    href: 'tel:+902165414305',
     confirmedByOwner: true,
   },
   email: 'pay@paymedikal.com',
   address: {
-    street: 'Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A',
+    street: 'Soğanlık Yeni Mahalle, Ihlara Sokak, No: 23/A',
     locality: '34880 Kartal / İstanbul, Türkiye',
-    mapQuery: 'Pay Medikal, Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal, İstanbul, Türkiye',
+    mapQuery: 'Pay Medikal, Soğanlık Yeni Mahalle, Ihlara Sokak, No: 23/A, 34880 Kartal, İstanbul, Türkiye',
     confirmedByOwner: true,
   },
 }
