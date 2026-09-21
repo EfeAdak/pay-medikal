@@ -18,7 +18,7 @@ Backend, veritabanı veya haricî API gerekmez. Sunucu ve kişisel veri toplayan
 
 ## Açık bilgi
 
-E-posta bulunamadı, kullanıcıdan istendi. `src/content/company.ts` içindeki `email` şu anda `null`. E-posta alanı açık bir güncelleme mesajı gösterir; uydurma adres kullanılmaz. Telefon `0216 541 43 05` ve Kartal adresi dizin araştırmasına dayanır; güncel oldukları firma tarafından henüz doğrulanmadı. Firma logosu da doğrulanmadı, yazı düzeni tasarım önerisidir.
+E-posta `pay@paymedikal.com`, telefon `+90 216 541 45 05` ve adres `Soğanlık Yeni Mahallesi, Ihlara Sokak, No: 23/A, 34880 Kartal / İstanbul, Türkiye` proje sahibi tarafından 21 Eylül 2026 tarihinde doğrulandı. Bu bilgiler `src/content/company.ts` içinde tek kaynaktan yönetilir. Firma logosu henüz gelmedi; mevcut yazı düzeni geçici tasarım önerisidir.
 
 ## Devam ederken
 
