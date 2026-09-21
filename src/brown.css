@@ -82,11 +82,11 @@
   margin: 0;
   color: var(--brown-ink);
   font-family: 'Newsreader Variable', Georgia, serif;
-  font-size: clamp(68px, 7.6vw, 118px);
+  font-size: clamp(52px, 6.4vw, 96px);
   font-weight: 360;
   font-style: italic;
-  line-height: 0.91;
-  letter-spacing: -0.062em;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
 }
 .brown-description {
   max-width: 500px;
@@ -231,7 +231,7 @@
   }
   .brown-copy { padding: 0 0 42px; }
   .brown-eyebrow { margin-bottom: 22px; }
-  .brown-title { font-size: clamp(58px, 19vw, 82px); letter-spacing: -0.055em; }
+  .brown-title { font-size: clamp(40px, 12.5vw, 58px); line-height: 1.15; letter-spacing: -0.035em; }
   .brown-description { max-width: 370px; margin: 25px 0 25px; font-size: 15px; line-height: 1.8; }
   .brown-artwork { min-height: 0; aspect-ratio: 4 / 4.65; border-radius: 46% 46% 5px 5px / 22% 22% 5px 5px; }
   .brown-contact { margin: -1px 0 0; padding: 26px 22px; }
@@ -263,7 +263,7 @@
   .brown-site { padding: 0 17px; }
   .brown-location { max-width: 62px; line-height: 1.5; }
   .brown-location svg { display: none; }
-  .brown-title { font-size: 56px; }
+  .brown-title { font-size: 38px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -35,6 +35,8 @@ E-posta `pay@paymedikal.com`, telefon `+90 216 541 45 05` ve adres `Soğanlık Y
 
 Bu klasör başka bir projenin Git deposu içinde bulunuyor. Üst klasörün frontend/backend dosyaları ve mevcut kullanıcı değişiklikleri bu işe ait değil.
 
+21 Eylül 2026: Kullanıcı üçüncü konsepti (mühür) istemedi; ilgili branch ve dosyalar silindi, yalnızca yeşil ve kahve kaldı. Kullanıcı bu ikisini bir başkasına göstermek için tek link istedi. Bu proje reposuna (pay-medikal) hiçbir push/commit yapılmadan, ayrı bir repo olan `EfeAdak/EfeAdak.github.io` oluşturulup `npm run build` çıktısı oraya push edildi ve GitHub Pages açıldı: https://efeadak.github.io/ (yeşil) ve https://efeadak.github.io/kahve/ (kahve). Bu statik bir anlık görüntüdür; pay-medikal reposundaki sonraki değişiklikler otomatik yansımaz, güncellemek için build tekrar oraya push edilmeli.
+
 ## Doğrulama sonucu
 
 21 Eylül 2026: `npm run build` başarılı. Kahve konsepti eklendikten sonra `npm run test:browser -- --workers=2`: 16/16 başarılı (Chromium masaüstü ve mobil emülasyonu). Otomatik axe taramasında test edilen WCAG A/AA kuralları için ihlal bulunmadı. 320, 375, 768, 844, 1024 ve 1920px genişlikler; yatay taşma, klavye odağı, iletişim URL'leri, görsel yükleme, büyütülmüş metin, reduced-motion ve JavaScript kapalı kullanım kontrol edildi. Bu sonuç tüm tarayıcılarda manuel erişilebilirlik sertifikası değildir.
