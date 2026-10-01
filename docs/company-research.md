@@ -13,7 +13,7 @@ Araştırma tarihi: 21 Eylül 2026. Kapsam: Kartal/İstanbul'daki Pay Medikal ş
 | Telefon | +90 216 541 45 05 | Proje sahibi tarafından 21 Eylül 2026 tarihinde doğrudan teyit edildi. |
 | Alternatif numara | 0216 571 43 07 | Birlik belgelerinde telefon/faks sütunlarında farklı sunuluyor. Ana telefon olarak kullanılmadı. |
 | E-posta | pay@paymedikal.com | Proje sahibi tarafından 21 Eylül 2026 tarihinde doğrudan teyit edildi. |
-| Logo / marka renkleri | Resmî kaynak bulunamadı | Sayfadaki yazı düzeni ve renkler tasarım önerisidir, mevcut resmî logo olarak sunulmaz. |
+| Logo / marka renkleri | Pay Medikal logosu proje sahibi tarafından görsel dosyası olarak iletildi | 24 Eylül 2026 tarihinde doğrudan sağlandı. Kırmızı, siyah ve beyaz logo renkleri korunur; ayrıca bir marka kılavuzu sağlanmadı. |
 | Resmî web sitesi | Doğrulanamadı | `paymedikal.com` erişim denemesi sonuç vermedi; alan adı sahipliği çıkarımı yapılmadı. |
 
 ## Kaynaklar
@@ -26,7 +26,7 @@ Volza sonuçları şirketi Almanya'da gösteren tutarsız otomatik kayıtlar iç
 
 ## Yayına geçiş durumu
 
-E-posta, telefon ve adres proje sahibi tarafından teyit edildi. Kaynak kod tek noktadan güncellenir: `src/content/company.ts`. Resmî logo henüz gelmedi; mevcut yazı düzenleri geçici tasarım önerisidir.
+E-posta, telefon ve adres proje sahibi tarafından teyit edildi. Kaynak kod tek noktadan güncellenir: `src/content/company.ts`. Şirket logosu 24 Eylül 2026 tarihinde proje sahibi tarafından iletildi. Kaynak dosya düşük çözünürlüklü bir WhatsApp JPEG'i olduğu için sayfada büyütülmeden kullanılır. SVG veya yüksek çözünürlüklü şeffaf PNG gelirse aynı varlık güncellenmelidir.
 
 ## Kullanıcı teyidi (21 Eylül 2026)
 

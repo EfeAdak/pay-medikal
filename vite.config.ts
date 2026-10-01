@@ -10,6 +10,9 @@ export default defineConfig({
       input: {
         main: resolve(process.cwd(), 'index.html'),
         kahve: resolve(process.cwd(), 'kahve/index.html'),
+        kirmizi: resolve(process.cwd(), 'kirmizi/index.html'),
+        zumrut: resolve(process.cwd(), 'zumrut/index.html'),
+        kirmiziMedikal: resolve(process.cwd(), 'kirmizi-medikal/index.html'),
       },
     },
   },

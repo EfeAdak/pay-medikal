@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, EnvelopeSimple, MapPin, Phone, Plus, Wrench } from '@phosphor-icons/react'
+import { ArrowDown, ArrowUpRight, EnvelopeSimple, MapPin, Phone, Wrench } from '@phosphor-icons/react'
 import { company, mapsUrl } from './content/company'
 import { PageEntrance } from './components/PageEntrance'
 
@@ -8,9 +8,8 @@ export function App() {
       <a className="skip-link" href="#main">İçeriğe geç</a>
 
       <header className="site-header flex items-center justify-between">
-        <div className="wordmark" aria-label={company.name}>
-          <span className="brand-symbol" aria-hidden="true"><Plus size={24} weight="light" /></span>
-          <span className="brand-name">pay<span className="brand-descriptor">medikal</span></span>
+        <div className="wordmark">
+          <img className="site-logo" src="/images/pay-medikal-logo.jpeg" alt={`${company.name} logosu`} width={347} height={314} decoding="async" />
         </div>
         <span className="header-location"><MapPin size={16} weight="light" aria-hidden="true" />Kartal, İstanbul</span>
       </header>

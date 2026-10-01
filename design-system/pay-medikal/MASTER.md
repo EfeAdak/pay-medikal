@@ -47,7 +47,7 @@ Telif bilgisi                          Teşekkür
 
 İlk planın genel sağlık sitesi şablonuna dönüşmemesi için doktor fotoğrafı, hizmet kartları, sahte güven işaretleri ve ürün iddiaları çıkarıldı. Görsel tek odak. Bu bir bakım sayfası olduğu için çok bölümlü landing page örnekleri, menü, kaydırma kilidi ve sürekli animasyonlar kapsam dışında. Açık tema bilinçli olarak sabit; karanlık tema kontrolü eklenmez.
 
-Marka logosu doğrulanamadığı için yalnızca tipografik isim ve basit artı işareti kullanılır. Gerçek logo geldiğinde değiştirilir. Görsel konsept çalışmasıdır, satılan ürün gösterimi değildir.
+Proje sahibi tarafından sağlanan gerçek şirket logosu yeşil ve kırmızı temalı bakım sayfalarının üst kimlik alanında, oranı ve renkleri değiştirilmeden kullanılır. Kaynak düşük çözünürlüklü JPEG olduğu için büyütülmez; koyu zeminlerde beyaz bir kimlik plakası içinde tutulur. Görsel konsept çalışmasıdır, satılan ürün gösterimi değildir.
 
 ## Kalite ölçütleri
 
