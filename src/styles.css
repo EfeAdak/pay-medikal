@@ -32,7 +32,7 @@ main:focus, section:focus { outline: none; }
 
 .page-shell { max-width: 1440px; min-height: 100dvh; margin: 0 auto; padding: 0 72px; display: flex; flex-direction: column; }
 .site-header { min-height: 104px; gap: 24px; }
-.wordmark { flex: 0 0 auto; padding: 4px; overflow: hidden; border: 1px solid #254e4124; border-radius: 13px; background: #fff; box-shadow: 0 16px 38px -28px #254e4166; user-select: none; transform: translate(10px, 20px); }
+.wordmark { flex: 0 0 auto; padding: 4px; overflow: hidden; border: 1px solid #254e4124; border-radius: 13px; background: #fff; box-shadow: 0 16px 38px -28px #254e4166; user-select: none; transform: translate(39px, 20px); }
 .site-logo { width: 94px; height: auto; display: block; border-radius: 8px; }
 .header-location { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: var(--color-secondary); }
 
@@ -89,7 +89,7 @@ h1 { margin: 0; font-size: clamp(46px, 4.55vw, 68px); line-height: 1.1; font-wei
 @media (max-width: 767px) {
   .page-shell { padding: 0 24px; }
   .site-header { min-height: 104px; gap: 10px; }
-  .wordmark { border-radius: 11px; transform: translate(8px, 12px); }
+  .wordmark { border-radius: 11px; transform: translate(38px, 12px); }
   .site-logo { width: 84px; border-radius: 7px; }
   .header-location { font-size: 10px; gap: 4px; }
   .header-location svg { width: 13px; }
