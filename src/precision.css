@@ -23,7 +23,7 @@
 .precision-site main:focus, .precision-site section:focus { outline: none; }
 .precision-header, .precision-site main, .precision-footer { width: min(100% - 96px, 1512px); margin-inline: auto; }
 .precision-header { min-height: 140px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.precision-wordmark { flex: 0 0 auto; padding: 5px; overflow: hidden; border: 1px solid rgb(255 255 255 / 0.82); border-radius: 14px; background: #fff; box-shadow: 0 18px 42px -26px rgb(0 0 0 / 0.85), inset 0 1px 0 rgb(255 255 255 / 0.9); user-select: none; transform: translate(78px, 25px); }
+.precision-wordmark { flex: 0 0 auto; padding: 5px; overflow: hidden; border: 1px solid rgb(255 255 255 / 0.82); border-radius: 14px; background: #fff; box-shadow: 0 18px 42px -26px rgb(0 0 0 / 0.85), inset 0 1px 0 rgb(255 255 255 / 0.9); user-select: none; transform: translate(78px, 33px); }
 .precision-logo { width: 118px; height: auto; display: block; border-radius: 9px; }
 .precision-location { display: inline-flex; align-items: center; gap: 8px; color: var(--precision-muted); font-size: 12px; font-weight: 500; }
 .precision-hero { min-height: calc(100dvh - 140px); display: grid; grid-template-columns: minmax(340px, 0.8fr) minmax(520px, 1.2fr); align-items: center; gap: clamp(48px, 6vw, 104px); padding: 30px 0 78px; }
