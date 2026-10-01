@@ -58,7 +58,7 @@
   .precision-status { margin-bottom: 24px; font-size: 11px; }
   .precision-copy h1 { max-width: 560px; font-size: clamp(46px, 14vw, 68px); line-height: 1; }
   .precision-description { max-width: 430px; margin: 24px 0 28px; font-size: 15px; }
-  .precision-visual-shell { padding: 6px; border-radius: 21px; }
+  .precision-visual-shell { padding: 6px; border-radius: 21px; transform: translateY(16px); }
   .precision-visual-frame { border-radius: 15px; }
   .precision-footer { min-height: 100px; flex-wrap: wrap; padding: 28px 0; font-size: 10px; }
 }
