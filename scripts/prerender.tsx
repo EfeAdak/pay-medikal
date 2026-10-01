@@ -1,12 +1,10 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { renderToString } from 'react-dom/server'
 import { App } from '../src/App'
-import { BrownApp } from '../src/concepts/BrownApp'
 import { PrecisionApp } from '../src/concepts/PrecisionApp'
 
 const pages = [
   { path: new URL('../dist/index.html', import.meta.url), app: <App /> },
-  { path: new URL('../dist/kahve/index.html', import.meta.url), app: <BrownApp /> },
   { path: new URL('../dist/kirmizi-medikal/index.html', import.meta.url), app: <PrecisionApp /> },
 ]
 

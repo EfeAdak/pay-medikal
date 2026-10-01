@@ -3,10 +3,8 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import '@fontsource-variable/plus-jakarta-sans'
 import '@fontsource-variable/newsreader'
 import './styles.css'
-import './brown.css'
 import './precision.css'
 import { App } from './App'
-import { BrownApp } from './concepts/BrownApp'
 import { PrecisionApp } from './concepts/PrecisionApp'
 
 /** Prevent mobile browsers from restoring a stale bottom-of-page position. */
@@ -25,11 +23,9 @@ window.addEventListener('load', resetScrollOnEntry, { once: true })
 
 const root = document.getElementById('root')!
 const { pathname } = window.location
-const concept = pathname.startsWith('/kahve')
-  ? <BrownApp />
-  : pathname.startsWith('/kirmizi-medikal')
-    ? <PrecisionApp />
-    : <App />
+const concept = pathname.startsWith('/kirmizi-medikal')
+  ? <PrecisionApp />
+  : <App />
 const app = <StrictMode>{concept}</StrictMode>
 if (root.querySelector('main')) hydrateRoot(root, app)
 else createRoot(root).render(app)

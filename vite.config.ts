@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(process.cwd(), 'index.html'),
-        kahve: resolve(process.cwd(), 'kahve/index.html'),
         kirmiziMedikal: resolve(process.cwd(), 'kirmizi-medikal/index.html'),
       },
     },
