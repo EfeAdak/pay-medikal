@@ -64,8 +64,8 @@ test('precision concept supports keyboard focus and works without JavaScript', a
   await expect(staticPage.getByRole('heading', { level: 1 })).toBeVisible()
   await expect(staticPage.getByRole('img', { name: 'Pay Medikal logosu' })).toBeVisible()
   await expect(staticPage.locator('a[href^="tel:"]')).toBeVisible()
-  await staticPage.getByRole('link', { name: 'İletişim bilgileri' }).click()
-  await expect(staticPage).toHaveURL(/#precision-contact$/)
+  await expect(staticPage.locator('a[href^="mailto:"]')).toBeVisible()
+  await expect(staticPage.locator('.precision-address')).toBeVisible()
   await staticContext.close()
 })
 
@@ -82,6 +82,6 @@ test('precision concept starts at the top after reload and history return while 
   await page.goBack()
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0)
 
-  await page.goto('/kirmizi-medikal/#precision-contact')
+  await page.goto('/kirmizi-medikal/#precision-footer')
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0)
 })

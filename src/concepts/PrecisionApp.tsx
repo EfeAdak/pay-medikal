@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, EnvelopeSimple, MapPin, Phone, Wrench } from '@phosphor-icons/react'
+import { ArrowUpRight, EnvelopeSimple, MapPin, Phone, Wrench } from '@phosphor-icons/react'
 import { PageEntrance } from '../components/PageEntrance'
 import { company, mapsUrl } from '../content/company'
 
@@ -11,7 +11,6 @@ export function PrecisionApp() {
         <div className="precision-wordmark">
           <img className="precision-logo" src="/images/pay-medikal-logo.jpeg" alt={`${company.name} logosu`} width={347} height={314} decoding="async" />
         </div>
-        <span className="precision-location"><MapPin size={16} weight="light" aria-hidden="true" />Kartal, İstanbul</span>
       </header>
 
       <main id="precision-main" tabIndex={-1}>
@@ -25,10 +24,21 @@ export function PrecisionApp() {
             <p className="precision-description" data-entrance>
               Size daha iyi hizmet verebilmek için sitemizi yeniliyoruz. Bu süreçte iletişim bilgilerimiz üzerinden bize ulaşabilirsiniz.
             </p>
-            <div data-entrance>
-              <a className="precision-primary" href="#precision-contact">
-                İletişim bilgileri
-                <span aria-hidden="true"><ArrowDown size={18} weight="light" /></span>
+            <div className="precision-quick-contact" data-entrance>
+              <a className="precision-quick-row" href={company.phone.href} aria-label={`${company.phone.display} numarasını arayın`}>
+                <Phone size={18} weight="light" aria-hidden="true" />
+                {company.phone.display}
+              </a>
+              {company.email ? (
+                <a className="precision-quick-row" href={'mailto:' + company.email}>
+                  <EnvelopeSimple size={18} weight="light" aria-hidden="true" />
+                  {company.email}
+                </a>
+              ) : null}
+              <a className="precision-quick-row precision-address" href={mapsUrl} target="_blank" rel="noopener noreferrer" aria-label="Pay Medikal adresini Google Haritalar'da açın (yeni sekme)">
+                <MapPin size={18} weight="light" aria-hidden="true" />
+                {company.address.street}, {company.address.locality}
+                <ArrowUpRight size={14} weight="light" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -42,43 +52,9 @@ export function PrecisionApp() {
             </div>
           </div>
         </section>
-
-        <section id="precision-contact" className="precision-contact" aria-labelledby="precision-contact-title" tabIndex={-1}>
-          <div className="precision-contact-intro">
-            <h2 id="precision-contact-title">Bu süreçte bize ulaşın.</h2>
-            <p>Sorularınız ve talepleriniz için iletişim bilgilerimiz.</p>
-          </div>
-
-          <div className="precision-contact-layout">
-            <div className="precision-direct">
-              <a className="precision-contact-row" href={company.phone.href} aria-label={company.phone.display + ' numarasını arayın'}>
-                <span className="precision-contact-icon" aria-hidden="true"><Phone size={20} weight="light" /></span>
-                <span><small>Telefon</small><strong>{company.phone.display}</strong></span>
-                <ArrowUpRight size={18} weight="light" aria-hidden="true" />
-              </a>
-
-              {company.email ? (
-                <a className="precision-contact-row" href={'mailto:' + company.email}>
-                  <span className="precision-contact-icon" aria-hidden="true"><EnvelopeSimple size={20} weight="light" /></span>
-                  <span><small>E-posta</small><strong>{company.email}</strong></span>
-                  <ArrowUpRight size={18} weight="light" aria-hidden="true" />
-                </a>
-              ) : null}
-            </div>
-
-            <a className="precision-address" href={mapsUrl} target="_blank" rel="noopener noreferrer" aria-label="Pay Medikal adresini Google Haritalar'da açın (yeni sekme)">
-              <span className="precision-address-icon" aria-hidden="true"><MapPin size={22} weight="light" /></span>
-              <span className="precision-address-copy">
-                <small>Açık adres</small>
-                <address><strong>{company.address.street}</strong><br />{company.address.locality}</address>
-              </span>
-              <span className="precision-address-action">Haritada görüntüleyin <ArrowUpRight size={18} weight="light" aria-hidden="true" /></span>
-            </a>
-          </div>
-        </section>
       </main>
 
-      <footer className="precision-footer">
+      <footer id="precision-footer" className="precision-footer">
         <p>© {new Date().getFullYear()} Pay Medikal</p>
         <p>Anlayışınız için teşekkür ederiz.</p>
       </footer>
