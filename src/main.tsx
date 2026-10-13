@@ -3,9 +3,7 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import '@fontsource-variable/plus-jakarta-sans'
 import '@fontsource-variable/newsreader'
 import './styles.css'
-import './precision.css'
 import { App } from './App'
-import { PrecisionApp } from './concepts/PrecisionApp'
 
 /** Prevent mobile browsers from restoring a stale bottom-of-page position. */
 function resetScrollOnEntry() {
@@ -22,10 +20,6 @@ window.addEventListener('pageshow', resetScrollOnEntry)
 window.addEventListener('load', resetScrollOnEntry, { once: true })
 
 const root = document.getElementById('root')!
-const { pathname } = window.location
-const concept = pathname.startsWith('/kirmizi-medikal')
-  ? <PrecisionApp />
-  : <App />
-const app = <StrictMode>{concept}</StrictMode>
+const app = <StrictMode><App /></StrictMode>
 if (root.querySelector('main')) hydrateRoot(root, app)
 else createRoot(root).render(app)

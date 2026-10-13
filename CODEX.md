@@ -82,3 +82,13 @@ Proje sahibi 347x314 piksellik resmî Pay Medikal logosunu iletti. Yeşil ve kı
 Logo değişikliğinden sonra `npm run build` başarılı ve `npm run test:browser -- --workers=2` sonucu 36/36 geçti. Dört yeşil/kırmızı rotanın masaüstü ve mobil ekran görüntüleri incelendi; logo oranı, responsive yerleşim, axe A/AA taraması, 320-1920px yatay taşma, klavye odağı, reduced-motion, iletişim URL'leri ve JavaScript kapalı statik HTML doğrulandı.
 
 24 Eylül 2026: Güncel statik build, ayrı önizleme reposu `EfeAdak/EfeAdak.github.io` ana dalına `4bd537d` commit'iyle gönderildi. GitHub Pages build ve deployment işleri başarıyla tamamlandı. `/`, `/zumrut/`, `/kirmizi/` ve `/kirmizi-medikal/` canlı rotalarının tamamı HTTP 200, güncel `main-8a1XeIX8.css` ve `/images/pay-medikal-logo.jpeg` referansıyla doğrulandı.
+
+## Son karar: tek site olarak kırmızı-medikal (13 Ekim 2026)
+
+Kullanıcı nihai kararını verdi: sadece `kirmizi-medikal` konsepti (mat siyah anodize yüzeye gömülü kırmızı medikal artı görseli) kullanılacak, yeşil ana sayfa dahil diğer tüm alternatifler kaldırıldı. Proje artık tek route/tek build'dir.
+
+Yapılan değişiklik: `src/concepts/PrecisionApp.tsx` içeriği `src/App.tsx`'e taşındı (fonksiyon adı `App`), `src/precision.css` `src/styles.css`'e taşındı, eski yeşil `App.tsx`/`styles.css` ve `src/concepts/` kaldırıldı. `kirmizi-medikal/` klasörü ve `vite.config.ts`'teki çoklu giriş (rollupOptions) kaldırıldı; `index.html` artık doğrudan kırmızı/koyu tema meta verileriyle kök dizinde. `scripts/prerender.tsx` tek sayfa render eder. Kullanılmayan yeşil hero görselleri (`medical-glass-*`) silindi. Testler `tests/maintenance.spec.ts` altında birleştirildi, tüm yollar `/kirmizi-medikal/` yerine `/` kullanıyor; iki ayrı sayfa arasında geçiş test eden bfcache senaryosu artık geçerli olmadığından kaldırıldı.
+
+`npm run build` başarılı, `npm run test:browser -- --workers=2`: 8/8 geçti (masaüstü + mobil). Masaüstü ekran görüntüsü incelendi, kırmızı/siyah tema ve metal artı görseli doğru şekilde kök dizinde render ediliyor.
+
+**Cloudflare notu:** Kullanıcı Cloudflare Pages üzerinden GitHub'daki `pay-medikal` reposunu bağladığında yanlışlıkla beyaz-yeşil (eski ana) site yayınlandı; sebebi, build çıktısının o zaman hem `dist/index.html` (yeşil) hem `dist/kirmizi-medikal/index.html` (kırmızı) olarak iki ayrı giriş üretmesiydi ve Cloudflare kök dizini (`dist/index.html`) sunuyordu. Artık tek giriş olduğundan `dist/index.html` doğrudan kırmızı siteyi içeriyor; bu commit GitHub'a push edilip Cloudflare yeniden build aldığında kök adres doğru siteyi gösterecek. Build komutu `npm run build`, çıktı dizini `dist` olarak kalabilir, değişiklik gerekmiyor.

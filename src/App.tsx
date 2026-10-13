@@ -1,82 +1,60 @@
-import { ArrowDown, ArrowUpRight, EnvelopeSimple, MapPin, Phone, Wrench } from '@phosphor-icons/react'
-import { company, mapsUrl } from './content/company'
+import { ArrowUpRight, EnvelopeSimple, MapPin, Phone, Wrench } from '@phosphor-icons/react'
 import { PageEntrance } from './components/PageEntrance'
+import { company, mapsUrl } from './content/company'
 
 export function App() {
   return (
-    <PageEntrance>
-      <a className="skip-link" href="#main">İçeriğe geç</a>
+    <PageEntrance className="precision-site">
+      <a className="precision-skip" href="#precision-main">İçeriğe geç</a>
 
-      <header className="site-header flex items-center justify-between">
-        <div className="wordmark">
-          <img className="site-logo" src="/images/pay-medikal-logo.jpeg" alt={`${company.name} logosu`} width={347} height={314} decoding="async" />
+      <header className="precision-header">
+        <div className="precision-wordmark">
+          <img className="precision-logo" src="/images/pay-medikal-logo.jpeg" alt={`${company.name} logosu`} width={347} height={314} decoding="async" />
         </div>
-        <span className="header-location"><MapPin size={16} weight="light" aria-hidden="true" />Kartal, İstanbul</span>
       </header>
 
-      <main id="main" tabIndex={-1}>
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <div className="maintenance-label" data-entrance>
+      <main id="precision-main" tabIndex={-1}>
+        <section className="precision-hero" aria-labelledby="precision-title">
+          <div className="precision-copy">
+            <div className="precision-status" data-entrance>
               <Wrench size={16} weight="light" aria-hidden="true" />
               Web sitemiz yenileniyor
             </div>
-            <h1 id="hero-title" data-entrance>Daha iyi bir<br />deneyim için.</h1>
-            <p className="hero-description" data-entrance>Size daha iyi bir hizmet verebilmek için sitemiz geçici bir süreliğine bakımdadır.</p>
-            <div data-entrance>
-              <a className="contact-button" href="#iletisim">
-                İletişime geçin
-                <span className="button-icon"><ArrowDown size={19} weight="light" aria-hidden="true" /></span>
+            <h1 id="precision-title" data-entrance>Daha iyi bir deneyim için.</h1>
+            <p className="precision-description" data-entrance>
+              Size daha iyi hizmet verebilmek için sitemizi yeniliyoruz. Bu süreçte iletişim bilgilerimiz üzerinden bize ulaşabilirsiniz.
+            </p>
+            <div className="precision-quick-contact" data-entrance>
+              <a className="precision-quick-row" href={company.phone.href} aria-label={`${company.phone.display} numarasını arayın`}>
+                <Phone size={18} weight="light" aria-hidden="true" />
+                {company.phone.display}
+              </a>
+              {company.email ? (
+                <a className="precision-quick-row" href={'mailto:' + company.email}>
+                  <EnvelopeSimple size={18} weight="light" aria-hidden="true" />
+                  {company.email}
+                </a>
+              ) : null}
+              <a className="precision-quick-row precision-address" href={mapsUrl} target="_blank" rel="noopener noreferrer" aria-label="Pay Medikal adresini Google Haritalar'da açın (yeni sekme)">
+                <MapPin size={18} weight="light" aria-hidden="true" />
+                {company.address.street}, {company.address.locality}
+                <ArrowUpRight size={14} weight="light" aria-hidden="true" />
               </a>
             </div>
           </div>
 
-          <div className="artwork-shell" aria-hidden="true">
-            <div className="artwork-inner">
+          <div className="precision-visual-shell" aria-hidden="true">
+            <div className="precision-visual-frame">
               <picture>
-                <source type="image/avif" srcSet="/images/medical-glass-640.avif 640w, /images/medical-glass-1280.avif 1280w" sizes="(max-width: 767px) 100vw, 50vw" />
-                <img data-artwork src="/images/medical-glass-1280.webp" srcSet="/images/medical-glass-640.webp 640w, /images/medical-glass-1280.webp 1280w" sizes="(max-width: 767px) 100vw, 50vw" alt="" width={1448} height={1086} fetchPriority="high" />
+                <source type="image/avif" srcSet="/images/precision-cross-720.avif 720w, /images/precision-cross-1448.avif 1448w" sizes="(max-width: 767px) calc(100vw - 32px), 55vw" />
+                <img data-artwork src="/images/precision-cross-1448.webp" srcSet="/images/precision-cross-720.webp 720w, /images/precision-cross-1448.webp 1448w" sizes="(max-width: 767px) calc(100vw - 32px), 55vw" alt="" width={1448} height={1086} fetchPriority="high" />
               </picture>
             </div>
           </div>
         </section>
-
-        <section id="iletisim" className="contact-section" aria-labelledby="contact-title" tabIndex={-1}>
-          <div className="contact-heading">
-            <h2 id="contact-title">Bize ulaşın.</h2>
-            <p>Sorularınız ve talepleriniz için iletişim bilgilerimiz.</p>
-          </div>
-          <div className="contact-grid">
-            <a className="contact-item phone-item" href={company.phone.href} aria-label={`${company.phone.display} numarasını arayın`}>
-              <span className="contact-label"><Phone size={19} weight="light" aria-hidden="true" />Telefon</span>
-              <span className="contact-value">{company.phone.display}</span>
-              <span className="contact-action">Bizi arayın <ArrowUpRight size={15} weight="light" aria-hidden="true" /></span>
-            </a>
-
-            {company.email ? (
-              <a className="contact-item email-item" href={`mailto:${company.email}`}>
-                <span className="contact-label"><EnvelopeSimple size={19} weight="light" aria-hidden="true" />E-posta</span>
-                <span className="contact-value">{company.email}</span>
-                <span className="contact-action">E-posta gönderin <ArrowUpRight size={15} weight="light" aria-hidden="true" /></span>
-              </a>
-            ) : (
-              <div className="contact-item email-item email-pending">
-                <span className="contact-label"><EnvelopeSimple size={19} weight="light" aria-hidden="true" />E-posta</span>
-                <span className="contact-value pending-value">Bilgilerimiz güncelleniyor</span>
-                <span className="contact-note">Bize telefonla ulaşabilirsiniz.</span>
-              </div>
-            )}
-
-            <a className="contact-item address-item" href={mapsUrl} target="_blank" rel="noopener noreferrer" aria-label="Pay Medikal adresini Google Haritalar'da açın (yeni sekme)">
-              <span className="contact-label"><MapPin size={19} weight="light" aria-hidden="true" />Adres</span>
-              <address>{company.address.street}<br />{company.address.locality}</address>
-              <span className="contact-action">Haritada görüntüleyin <ArrowUpRight size={15} weight="light" aria-hidden="true" /></span>
-            </a>
-          </div>
-        </section>
       </main>
 
-      <footer className="site-footer flex flex-wrap items-center justify-between">
+      <footer id="precision-footer" className="precision-footer">
         <p>© {new Date().getFullYear()} Pay Medikal</p>
         <p>Anlayışınız için teşekkür ederiz.</p>
       </footer>
